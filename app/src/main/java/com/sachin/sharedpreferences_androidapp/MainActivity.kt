@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         saveButton.setOnClickListener{
             val name = name.text.toString().trim()
             val age = Integer.parseInt(age.text.toString().trim())
-            val experienced = switch1.isChecked
+            val subscribed = switch1.isChecked
 
             val editor = sharedPreferences.edit()
             editor.putString("NAME",name)
             editor.putInt("AGE",age)
-            editor.putBoolean("EXPERIENCED", experienced)
+            editor.putBoolean("SUBSCRIBE", subscribed)
 
             editor.apply()
         }
@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
 
             val name = sharedPreferences.getString("NAME","")
             val age = sharedPreferences.getInt("AGE",0)
-            val experience = sharedPreferences.getBoolean("EXPERIENCED",false)
+            val subscribe = sharedPreferences.getBoolean("SUBSCRIBE",false)
 
-            infoShower.text = "NAME: $name \nAge : $age  \nExperience: $experience"
+            infoShower.text = "Name:\t $name \nAge\t : $age  \nSubscribed to Emailing:\t $subscribe"
         }
 
     }
