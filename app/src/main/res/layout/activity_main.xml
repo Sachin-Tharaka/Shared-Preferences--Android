@@ -1,50 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BAC3DF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/nameEt"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Enter The First name"
         android:inputType="textCapSentences"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="#000000" />
 
     <EditText
-        android:id="@+id/ageEt"
+        android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter The Age"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:textColor="#000000" />
 
     <Switch
-        android:id="@+id/switchh"
+        android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Are you experienced"/>
+        android:text="Subscribe to EMail"
+        android:textColor="#000000" />
 
     <Button
-        android:id="@+id/saveBtn"
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Save"/>
+        android:text="Save" />
 
     <Button
-        android:id="@+id/showInfoBtn"
+        android:id="@+id/showInfoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Show Info"/>
+        android:text="Show Info" />
 
     <TextView
-        android:id="@+id/infoTV"
+        android:id="@+id/infoShower"
         android:layout_width="match_parent"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
 </LinearLayout>
