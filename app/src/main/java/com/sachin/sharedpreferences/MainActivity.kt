@@ -15,10 +15,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main )
 
         //name and mode of the Shared Preference
         val sharedPreferences = getSharedPreferences("SP_INFO", MODE_PRIVATE)
 
+
+        //Save button to save data to shared preferences
 
     }
 }
